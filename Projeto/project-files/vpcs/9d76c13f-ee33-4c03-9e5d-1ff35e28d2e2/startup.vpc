@@ -1,0 +1,2 @@
+set pcname Datacenter_S
+ip 200.100.4.100 200.100.4.1 24
