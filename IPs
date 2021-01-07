@@ -1,0 +1,7 @@
+Arasaka VoIP Net 1 --->  193.136.0.0/24
+Arasaka VoIP Net 2 --->  193.136.1.0/24
+Arasaka Data Net 1 --->  193.136.2.0/24
+Arasaka Data Net 2 --->  193.136.3.0/24
+
+Militech Net 1 --->  193.136.200.0/24
+Militech External Net --->  193.136.202.0/24
