@@ -1,0 +1,39 @@
+Jan 08 15:45:50.184 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 08 15:45:50.184 HYPERVISOR: Started on IP = localhost, TCP port = 54845.
+Jan 08 15:45:50.196 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 08 15:45:50.196 HYPERVISOR: exec_cmd: hypervisor working_dir /home/dariod9/GNS3/projects/ARA_Proj/Projeto/project-files/dynamips 
+Jan 08 15:45:50.196 GENERAL: working_dir=/home/dariod9/GNS3/projects/ARA_Proj/Projeto/project-files/dynamips
+Jan 08 15:45:50.197 HYPERVISOR: exec_cmd: hypervisor working_dir /home/dariod9/GNS3/projects/ARA_Proj/Projeto/project-files/dynamips/91a38357-c84d-4b53-945c-e853c7dbfc2d 
+Jan 08 15:45:50.197 GENERAL: working_dir=/home/dariod9/GNS3/projects/ARA_Proj/Projeto/project-files/dynamips/91a38357-c84d-4b53-945c-e853c7dbfc2d
+Jan 08 15:45:50.197 HYPERVISOR: exec_cmd: vm create SantoDomingo 4 c7200 
+Jan 08 15:45:50.197 VM: VM SantoDomingo created.
+Jan 08 15:45:50.197 HYPERVISOR: exec_cmd: vm set_con_tcp_port SantoDomingo 5003 
+Jan 08 15:45:50.198 HYPERVISOR: exec_cmd: c7200 get_mac_addr SantoDomingo 
+Jan 08 15:45:50.198 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 08 15:45:50.198 HYPERVISOR: exec_cmd: vm slot_add_binding SantoDomingo 0 0 C7200-IO-FE 
+Jan 08 15:45:50.198 HYPERVISOR: exec_cmd: vm set_disk0 SantoDomingo 0 
+Jan 08 15:45:50.199 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 08 15:45:50.199 HYPERVISOR: exec_cmd: vm set_idle_pc SantoDomingo 0x6318687c 
+Jan 08 15:45:50.200 HYPERVISOR: exec_cmd: vm set_ios SantoDomingo /home/dariod9/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 08 15:45:50.200 HYPERVISOR: exec_cmd: c7200 set_mac_addr SantoDomingo ca04.1b3a.0000 
+Jan 08 15:45:50.200 HYPERVISOR: exec_cmd: vm set_nvram SantoDomingo 512 
+Jan 08 15:45:50.201 HYPERVISOR: exec_cmd: vm set_ram SantoDomingo 512 
+Jan 08 15:45:50.201 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 08 15:45:50.202 HYPERVISOR: exec_cmd: vm slot_remove_binding SantoDomingo 0 0 
+Jan 08 15:45:50.202 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 08 15:45:50.202 HYPERVISOR: exec_cmd: vm slot_add_binding SantoDomingo 0 0 C7200-IO-2FE 
+Jan 08 15:45:50.203 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 08 15:45:50.203 HYPERVISOR: exec_cmd: vm slot_add_binding SantoDomingo 1 0 PA-2FE-TX 
+Jan 08 15:45:51.526 HYPERVISOR: exec_cmd: nio create_udp udp-c82f766a-ab22-4aa4-96f0-7fa53c460a2b 10010 127.0.0.1 10011 
+Jan 08 15:45:51.739 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SantoDomingo 0 0 udp-c82f766a-ab22-4aa4-96f0-7fa53c460a2b 
+Jan 08 15:45:51.740 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 08 15:45:52.472 HYPERVISOR: exec_cmd: nio create_udp udp-28556b46-5842-4c4f-bc65-c0b3deb5bb74 10032 127.0.0.1 10033 
+Jan 08 15:45:52.473 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SantoDomingo 0 1 udp-28556b46-5842-4c4f-bc65-c0b3deb5bb74 
+Jan 08 15:45:52.473 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 08 15:46:09.152 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 08 15:46:09.153 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 08 15:46:09.153 HYPERVISOR: exec_cmd: vm delete SantoDomingo 
+Jan 08 15:46:09.153 VM: VM SantoDomingo destroyed.
+Jan 08 15:46:09.154 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 08 15:46:09.214 HYPERVISOR: Stopped.
+Jan 08 15:46:09.214 GENERAL: reset done.
