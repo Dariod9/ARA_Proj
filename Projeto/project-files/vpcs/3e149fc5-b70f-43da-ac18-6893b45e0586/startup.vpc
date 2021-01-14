@@ -1,0 +1,2 @@
+set pcname Internet
+ip 8.8.8.100 8.8.8.8 24

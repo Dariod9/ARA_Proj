@@ -1,0 +1,61 @@
+Jan 14 19:10:24.469 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 14 19:10:24.469 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55709.
+Jan 14 19:10:24.479 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 14 19:10:24.479 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips 
+Jan 14 19:10:24.479 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips
+Jan 14 19:10:24.479 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/eb0a15e6-07bb-48fd-bed8-a2168bee68b3 
+Jan 14 19:10:24.479 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/eb0a15e6-07bb-48fd-bed8-a2168bee68b3
+Jan 14 19:10:24.480 HYPERVISOR: exec_cmd: vm create B_Media_Net 17 c7200 
+Jan 14 19:10:24.480 VM: VM B_Media_Net created.
+Jan 14 19:10:24.480 HYPERVISOR: exec_cmd: vm set_con_tcp_port B_Media_Net 5030 
+Jan 14 19:10:24.480 HYPERVISOR: exec_cmd: c7200 get_mac_addr B_Media_Net 
+Jan 14 19:10:24.480 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 14 19:10:24.480 HYPERVISOR: exec_cmd: vm slot_add_binding B_Media_Net 0 0 C7200-IO-FE 
+Jan 14 19:10:24.481 HYPERVISOR: exec_cmd: vm set_disk0 B_Media_Net 0 
+Jan 14 19:10:24.481 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 14 19:10:24.481 HYPERVISOR: exec_cmd: vm set_idle_pc B_Media_Net 0x62cbf334 
+Jan 14 19:10:24.481 HYPERVISOR: exec_cmd: vm set_ios B_Media_Net /home/samuel/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 14 19:10:24.481 HYPERVISOR: exec_cmd: c7200 set_mac_addr B_Media_Net ca11.1d52.0000 
+Jan 14 19:10:24.482 HYPERVISOR: exec_cmd: vm set_nvram B_Media_Net 512 
+Jan 14 19:10:24.482 HYPERVISOR: exec_cmd: vm set_ram B_Media_Net 512 
+Jan 14 19:10:24.482 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 14 19:10:24.482 HYPERVISOR: exec_cmd: vm slot_remove_binding B_Media_Net 0 0 
+Jan 14 19:10:24.482 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 14 19:10:24.483 HYPERVISOR: exec_cmd: vm slot_add_binding B_Media_Net 0 0 C7200-IO-2FE 
+Jan 14 19:10:24.483 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 14 19:10:24.483 HYPERVISOR: exec_cmd: vm slot_add_binding B_Media_Net 1 0 PA-2FE-TX 
+Jan 14 19:10:29.871 HYPERVISOR: exec_cmd: nio create_udp udp-fc086df6-e28a-4ee5-9b3d-96ed34dd9f24 10112 127.0.0.1 10113 
+Jan 14 19:10:30.085 HYPERVISOR: exec_cmd: vm slot_add_nio_binding B_Media_Net 0 1 udp-fc086df6-e28a-4ee5-9b3d-96ed34dd9f24 
+Jan 14 19:10:30.086 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 14 19:10:30.259 HYPERVISOR: exec_cmd: nio create_udp udp-8c6537e3-7dda-4204-8365-e06c4fb867f8 10120 127.0.0.1 10121 
+Jan 14 19:10:30.260 HYPERVISOR: exec_cmd: vm slot_add_nio_binding B_Media_Net 0 0 udp-8c6537e3-7dda-4204-8365-e06c4fb867f8 
+Jan 14 19:10:30.260 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 14 19:11:38.230 HYPERVISOR: exec_cmd: vm set_ghost_status B_Media_Net 2 
+Jan 14 19:11:38.231 HYPERVISOR: exec_cmd: vm set_ghost_file B_Media_Net /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 14 19:11:38.232 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 14 19:11:38.234 HYPERVISOR: exec_cmd: vm set_config B_Media_Net configs/i17_startup-config.cfg configs/i17_private-config.cfg 
+Jan 14 19:11:38.234 HYPERVISOR: exec_cmd: vm start B_Media_Net 
+Jan 14 19:12:08.466 HYPERVISOR: exec_cmd: vm extract_config B_Media_Net 
+Jan 14 19:12:38.467 HYPERVISOR: exec_cmd: vm extract_config B_Media_Net 
+Jan 14 21:46:58.268 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 14 21:46:58.268 HYPERVISOR: exec_cmd: vm stop B_Media_Net 
+Jan 14 21:46:58.398 VM: VM B_Media_Net shutdown.
+Jan 14 21:46:58.399 HYPERVISOR: exec_cmd: vm extract_config B_Media_Net 
+Jan 14 21:47:35.696 HYPERVISOR: exec_cmd: vm set_ghost_status B_Media_Net 2 
+Jan 14 21:47:35.696 HYPERVISOR: exec_cmd: vm set_ghost_file B_Media_Net /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 14 21:47:35.696 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 14 21:47:35.697 HYPERVISOR: exec_cmd: vm set_config B_Media_Net configs/i17_startup-config.cfg configs/i17_private-config.cfg 
+Jan 14 21:47:35.697 HYPERVISOR: exec_cmd: vm start B_Media_Net 
+Jan 14 23:46:48.420 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 14 23:46:48.421 HYPERVISOR: exec_cmd: vm stop B_Media_Net 
+Jan 14 23:46:48.560 VM: VM B_Media_Net shutdown.
+Jan 14 23:46:48.576 HYPERVISOR: exec_cmd: vm extract_config B_Media_Net 
+Jan 14 23:46:56.838 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 14 23:46:56.839 HYPERVISOR: exec_cmd: vm extract_config B_Media_Net 
+Jan 14 23:46:58.281 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 14 23:46:58.281 HYPERVISOR: exec_cmd: vm extract_config B_Media_Net 
+Jan 14 23:46:58.283 HYPERVISOR: exec_cmd: vm delete B_Media_Net 
+Jan 14 23:46:58.283 VM: VM B_Media_Net destroyed.
+Jan 14 23:46:58.284 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 14 23:46:58.719 HYPERVISOR: Stopped.
+Jan 14 23:46:58.719 GENERAL: reset done.
