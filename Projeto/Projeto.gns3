@@ -770,37 +770,6 @@
             },
             {
                 "filters": {},
-                "link_id": "2678afed-eb3e-4117-8fe9-99a6bbd1fe66",
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": 70,
-                            "y": 18
-                        },
-                        "node_id": "b4735a1e-bc07-4fd3-ab37-391cbdc2de02",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 1,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "f1/1",
-                            "x": -5,
-                            "y": 32
-                        },
-                        "node_id": "b5eddcb0-64dd-49e9-b77b-c7b7bec7021f",
-                        "port_number": 1
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
                 "link_id": "791e5415-ed56-494a-91a1-accd9cfe434a",
                 "nodes": [
                     {
@@ -944,6 +913,37 @@
                         },
                         "node_id": "91a38357-c84d-4b53-945c-e853c7dbfc2d",
                         "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "a816c4b5-f40a-49e1-8713-3c9c2c490c20",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": 71,
+                            "y": 22
+                        },
+                        "node_id": "ac74a1e2-5d30-47e1-84ec-fd0a4129f9dc",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f1/1",
+                            "x": -6,
+                            "y": 28
+                        },
+                        "node_id": "b5eddcb0-64dd-49e9-b77b-c7b7bec7021f",
+                        "port_number": 1
                     }
                 ],
                 "suspend": false
@@ -2403,45 +2403,6 @@
             },
             {
                 "compute_id": "local",
-                "console": null,
-                "console_auto_start": false,
-                "console_type": "none",
-                "custom_adapters": [],
-                "first_port_name": "",
-                "height": 59,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Datacenter_S1",
-                    "x": -24,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "Datacenter_S1",
-                "node_id": "b4735a1e-bc07-4fd3-ab37-391cbdc2de02",
-                "node_type": "virtualbox",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
-                    "adapters": 1,
-                    "headless": false,
-                    "linked_clone": false,
-                    "on_close": "power_off",
-                    "ram": 512,
-                    "usage": "",
-                    "use_any_adapter": false,
-                    "vmname": "LabComServer"
-                },
-                "symbol": ":/symbols/vbox_guest.svg",
-                "template_id": "3739b9a6-b8a3-4d6c-851c-aebccec4bec0",
-                "width": 65,
-                "x": 279,
-                "y": 222,
-                "z": 1
-            },
-            {
-                "compute_id": "local",
                 "console": 5037,
                 "console_auto_start": false,
                 "console_type": "telnet",
@@ -2604,6 +2565,45 @@
                 "width": 65,
                 "x": -115,
                 "y": -276,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "none",
+                "custom_adapters": [],
+                "first_port_name": "",
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "Datacenter_S1",
+                    "x": -24,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "Datacenter_S1",
+                "node_id": "ac74a1e2-5d30-47e1-84ec-fd0a4129f9dc",
+                "node_type": "virtualbox",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
+                    "adapters": 1,
+                    "headless": false,
+                    "linked_clone": false,
+                    "on_close": "power_off",
+                    "ram": 512,
+                    "usage": "",
+                    "use_any_adapter": false,
+                    "vmname": "LabComServerCDN"
+                },
+                "symbol": ":/symbols/vbox_guest.svg",
+                "template_id": "fa1131b4-2ddd-4fc9-be55-8379895e4091",
+                "width": 65,
+                "x": 249,
+                "y": 199,
                 "z": 1
             }
         ]
