@@ -1,0 +1,43 @@
+Jan 16 15:44:33.734 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 16 15:44:33.734 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54441.
+Jan 16 15:44:33.745 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 16 15:44:33.745 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips 
+Jan 16 15:44:33.745 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips
+Jan 16 15:44:33.746 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/2b3859d1-9c72-4c76-afee-ba09908e71d3 
+Jan 16 15:44:33.746 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/2b3859d1-9c72-4c76-afee-ba09908e71d3
+Jan 16 15:44:33.746 HYPERVISOR: exec_cmd: vm create TesteDNS 18 c3725 
+Jan 16 15:44:33.746 VM: VM TesteDNS created.
+Jan 16 15:44:33.747 HYPERVISOR: exec_cmd: vm set_con_tcp_port TesteDNS 5037 
+Jan 16 15:44:33.747 HYPERVISOR: exec_cmd: c3725 get_mac_addr TesteDNS 
+Jan 16 15:44:33.748 HYPERVISOR: exec_cmd: vm set_disk0 TesteDNS 0 
+Jan 16 15:44:33.748 HYPERVISOR: exec_cmd: vm get_status TesteDNS 
+Jan 16 15:44:33.749 HYPERVISOR: exec_cmd: vm set_idle_pc TesteDNS 0x60a68e70 
+Jan 16 15:44:33.750 HYPERVISOR: exec_cmd: vm set_ios TesteDNS /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 16 15:44:33.750 HYPERVISOR: exec_cmd: c3725 set_mac_addr TesteDNS c212.2280.0000 
+Jan 16 15:44:33.751 HYPERVISOR: exec_cmd: vm set_nvram TesteDNS 256 
+Jan 16 15:44:33.751 HYPERVISOR: exec_cmd: vm get_status TesteDNS 
+Jan 16 15:44:33.751 HYPERVISOR: exec_cmd: vm slot_add_binding TesteDNS 1 0 NM-1FE-TX 
+Jan 16 15:44:42.589 HYPERVISOR: exec_cmd: nio create_udp udp-0b0f5321-f740-4a1a-ba37-74445972801a 10112 127.0.0.1 10113 
+Jan 16 15:44:42.804 HYPERVISOR: exec_cmd: vm slot_add_nio_binding TesteDNS 0 0 udp-0b0f5321-f740-4a1a-ba37-74445972801a 
+Jan 16 15:44:42.805 HYPERVISOR: exec_cmd: vm get_status TesteDNS 
+Jan 16 15:45:39.320 HYPERVISOR: exec_cmd: vm set_ghost_status TesteDNS 2 
+Jan 16 15:45:39.321 HYPERVISOR: exec_cmd: vm set_ghost_file TesteDNS /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 16 15:45:39.321 HYPERVISOR: exec_cmd: vm get_status TesteDNS 
+Jan 16 15:45:39.322 HYPERVISOR: exec_cmd: vm set_config TesteDNS configs/i18_startup-config.cfg 
+Jan 16 15:45:39.322 HYPERVISOR: exec_cmd: vm start TesteDNS 
+Jan 16 15:50:05.759 HYPERVISOR: exec_cmd: vm get_status TesteDNS 
+Jan 16 15:50:05.799 HYPERVISOR: exec_cmd: vm stop TesteDNS 
+Jan 16 15:50:05.864 VM: VM TesteDNS shutdown.
+Jan 16 15:50:05.925 HYPERVISOR: exec_cmd: vm extract_config TesteDNS 
+Jan 16 16:11:03.698 HYPERVISOR: exec_cmd: vm set_ios TesteDNS /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 16 16:37:51.003 HYPERVISOR: exec_cmd: vm get_status TesteDNS 
+Jan 16 16:37:51.099 HYPERVISOR: exec_cmd: vm extract_config TesteDNS 
+Jan 16 16:38:21.608 HYPERVISOR: exec_cmd: vm get_status TesteDNS 
+Jan 16 16:38:21.608 HYPERVISOR: exec_cmd: vm extract_config TesteDNS 
+Jan 16 16:38:29.741 HYPERVISOR: exec_cmd: vm get_status TesteDNS 
+Jan 16 16:38:29.743 HYPERVISOR: exec_cmd: vm extract_config TesteDNS 
+Jan 16 16:38:29.760 HYPERVISOR: exec_cmd: vm delete TesteDNS 
+Jan 16 16:38:30.096 VM: VM TesteDNS destroyed.
+Jan 16 16:38:30.116 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 16 16:38:30.699 HYPERVISOR: Stopped.
+Jan 16 16:38:30.701 GENERAL: reset done.

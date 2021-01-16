@@ -1,0 +1,41 @@
+Jan 16 16:59:24.741 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 16 16:59:24.741 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56927.
+Jan 16 16:59:24.752 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 16 16:59:24.752 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips 
+Jan 16 16:59:24.752 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips
+Jan 16 16:59:24.752 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/654d4500-2507-4068-921a-bafea2822fce 
+Jan 16 16:59:24.752 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/654d4500-2507-4068-921a-bafea2822fce
+Jan 16 16:59:24.752 HYPERVISOR: exec_cmd: vm create Heywood 3 c7200 
+Jan 16 16:59:24.752 VM: VM Heywood created.
+Jan 16 16:59:24.753 HYPERVISOR: exec_cmd: vm set_con_tcp_port Heywood 5002 
+Jan 16 16:59:24.753 HYPERVISOR: exec_cmd: c7200 get_mac_addr Heywood 
+Jan 16 16:59:24.753 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 16 16:59:24.753 HYPERVISOR: exec_cmd: vm slot_add_binding Heywood 0 0 C7200-IO-FE 
+Jan 16 16:59:24.754 HYPERVISOR: exec_cmd: vm set_disk0 Heywood 0 
+Jan 16 16:59:24.754 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 16 16:59:24.754 HYPERVISOR: exec_cmd: vm set_idle_pc Heywood 0x62cbf334 
+Jan 16 16:59:24.755 HYPERVISOR: exec_cmd: vm set_ios Heywood /home/samuel/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 16 16:59:24.755 HYPERVISOR: exec_cmd: c7200 set_mac_addr Heywood ca03.1b2a.0000 
+Jan 16 16:59:24.755 HYPERVISOR: exec_cmd: vm set_nvram Heywood 512 
+Jan 16 16:59:24.755 HYPERVISOR: exec_cmd: vm set_ram Heywood 512 
+Jan 16 16:59:24.756 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 16 16:59:24.756 HYPERVISOR: exec_cmd: vm slot_remove_binding Heywood 0 0 
+Jan 16 16:59:24.756 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 16 16:59:24.756 HYPERVISOR: exec_cmd: vm slot_add_binding Heywood 0 0 C7200-IO-2FE 
+Jan 16 16:59:24.756 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 16 16:59:24.757 HYPERVISOR: exec_cmd: vm slot_add_binding Heywood 1 0 PA-2FE-TX 
+Jan 16 16:59:27.792 HYPERVISOR: exec_cmd: nio create_udp udp-4ae2faf6-eb6c-4dad-9a01-870fb92c639e 10014 127.0.0.1 10015 
+Jan 16 16:59:28.008 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Heywood 0 1 udp-4ae2faf6-eb6c-4dad-9a01-870fb92c639e 
+Jan 16 16:59:28.009 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 16 16:59:33.195 HYPERVISOR: exec_cmd: nio create_udp udp-4a9ce757-f2c9-42e3-9426-71b6ada31a1e 10120 127.0.0.1 10121 
+Jan 16 16:59:33.196 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Heywood 0 0 udp-4a9ce757-f2c9-42e3-9426-71b6ada31a1e 
+Jan 16 16:59:33.197 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 16 17:02:20.431 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 16 17:02:20.433 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 16 17:02:27.083 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 16 17:02:27.084 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 16 17:02:27.084 HYPERVISOR: exec_cmd: vm delete Heywood 
+Jan 16 17:02:27.084 VM: VM Heywood destroyed.
+Jan 16 17:02:27.084 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 16 17:02:27.441 HYPERVISOR: Stopped.
+Jan 16 17:02:27.441 GENERAL: reset done.

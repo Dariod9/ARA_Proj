@@ -1,0 +1,44 @@
+Jan 16 16:59:24.706 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 16 16:59:24.707 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52441.
+Jan 16 16:59:24.717 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 16 16:59:24.717 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips 
+Jan 16 16:59:24.717 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips
+Jan 16 16:59:24.717 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/87dc3e6c-d267-4968-b75d-07bd53873798 
+Jan 16 16:59:24.717 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/87dc3e6c-d267-4968-b75d-07bd53873798
+Jan 16 16:59:24.718 HYPERVISOR: exec_cmd: vm create CityCenter 2 c7200 
+Jan 16 16:59:24.718 VM: VM CityCenter created.
+Jan 16 16:59:24.718 HYPERVISOR: exec_cmd: vm set_con_tcp_port CityCenter 5001 
+Jan 16 16:59:24.718 HYPERVISOR: exec_cmd: c7200 get_mac_addr CityCenter 
+Jan 16 16:59:24.718 HYPERVISOR: exec_cmd: vm get_status CityCenter 
+Jan 16 16:59:24.719 HYPERVISOR: exec_cmd: vm slot_add_binding CityCenter 0 0 C7200-IO-FE 
+Jan 16 16:59:24.719 HYPERVISOR: exec_cmd: vm set_disk0 CityCenter 0 
+Jan 16 16:59:24.719 HYPERVISOR: exec_cmd: vm get_status CityCenter 
+Jan 16 16:59:24.719 HYPERVISOR: exec_cmd: vm set_idle_pc CityCenter 0x62cbf334 
+Jan 16 16:59:24.720 HYPERVISOR: exec_cmd: vm set_ios CityCenter /home/samuel/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 16 16:59:24.720 HYPERVISOR: exec_cmd: c7200 set_mac_addr CityCenter ca02.1b1a.0000 
+Jan 16 16:59:24.721 HYPERVISOR: exec_cmd: vm set_nvram CityCenter 512 
+Jan 16 16:59:24.721 HYPERVISOR: exec_cmd: vm set_ram CityCenter 512 
+Jan 16 16:59:24.721 HYPERVISOR: exec_cmd: vm get_status CityCenter 
+Jan 16 16:59:24.721 HYPERVISOR: exec_cmd: vm slot_remove_binding CityCenter 0 0 
+Jan 16 16:59:24.722 HYPERVISOR: exec_cmd: vm get_status CityCenter 
+Jan 16 16:59:24.722 HYPERVISOR: exec_cmd: vm slot_add_binding CityCenter 0 0 C7200-IO-2FE 
+Jan 16 16:59:24.722 HYPERVISOR: exec_cmd: vm get_status CityCenter 
+Jan 16 16:59:24.722 HYPERVISOR: exec_cmd: vm slot_add_binding CityCenter 1 0 PA-2FE-TX 
+Jan 16 16:59:26.930 HYPERVISOR: exec_cmd: nio create_udp udp-7fcb3a58-0031-4af5-800d-c9fac40e2c41 10002 127.0.0.1 10003 
+Jan 16 16:59:27.144 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CityCenter 0 0 udp-7fcb3a58-0031-4af5-800d-c9fac40e2c41 
+Jan 16 16:59:27.145 HYPERVISOR: exec_cmd: vm get_status CityCenter 
+Jan 16 16:59:27.475 HYPERVISOR: exec_cmd: nio create_udp udp-03c2c079-9550-4bb8-a4b2-4c0baeec2a00 10008 127.0.0.1 10009 
+Jan 16 16:59:27.476 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CityCenter 0 1 udp-03c2c079-9550-4bb8-a4b2-4c0baeec2a00 
+Jan 16 16:59:27.476 HYPERVISOR: exec_cmd: vm get_status CityCenter 
+Jan 16 16:59:33.108 HYPERVISOR: exec_cmd: nio create_udp udp-ee22ba0a-eb1a-4104-9b23-928412aaaf4a 10116 127.0.0.1 10117 
+Jan 16 16:59:33.110 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CityCenter 1 0 udp-ee22ba0a-eb1a-4104-9b23-928412aaaf4a 
+Jan 16 16:59:33.110 HYPERVISOR: exec_cmd: vm get_status CityCenter 
+Jan 16 17:02:20.433 HYPERVISOR: exec_cmd: vm get_status CityCenter 
+Jan 16 17:02:20.434 HYPERVISOR: exec_cmd: vm extract_config CityCenter 
+Jan 16 17:02:27.227 HYPERVISOR: exec_cmd: vm get_status CityCenter 
+Jan 16 17:02:27.227 HYPERVISOR: exec_cmd: vm extract_config CityCenter 
+Jan 16 17:02:27.228 HYPERVISOR: exec_cmd: vm delete CityCenter 
+Jan 16 17:02:27.228 VM: VM CityCenter destroyed.
+Jan 16 17:02:27.228 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 16 17:02:27.393 HYPERVISOR: Stopped.
+Jan 16 17:02:27.393 GENERAL: reset done.

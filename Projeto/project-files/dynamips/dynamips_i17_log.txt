@@ -1,0 +1,31 @@
+Jan 16 16:59:25.243 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 16 16:59:25.243 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57111.
+Jan 16 16:59:25.254 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 16 16:59:25.254 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips 
+Jan 16 16:59:25.254 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips
+Jan 16 16:59:25.254 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/4a70a5ee-cba7-484f-b60e-c75bb14110fa 
+Jan 16 16:59:25.254 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/4a70a5ee-cba7-484f-b60e-c75bb14110fa
+Jan 16 16:59:25.254 HYPERVISOR: exec_cmd: vm create Datacenter_N1 16 c3725 
+Jan 16 16:59:25.254 VM: VM Datacenter_N1 created.
+Jan 16 16:59:25.255 HYPERVISOR: exec_cmd: vm set_con_tcp_port Datacenter_N1 5036 
+Jan 16 16:59:25.255 HYPERVISOR: exec_cmd: c3725 get_mac_addr Datacenter_N1 
+Jan 16 16:59:25.255 HYPERVISOR: exec_cmd: vm set_disk0 Datacenter_N1 0 
+Jan 16 16:59:25.255 HYPERVISOR: exec_cmd: vm get_status Datacenter_N1 
+Jan 16 16:59:25.255 HYPERVISOR: exec_cmd: vm set_idle_pc Datacenter_N1 0x60a68e70 
+Jan 16 16:59:25.256 HYPERVISOR: exec_cmd: vm set_ios Datacenter_N1 /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 16 16:59:25.256 HYPERVISOR: exec_cmd: c3725 set_mac_addr Datacenter_N1 c210.1d3e.0000 
+Jan 16 16:59:25.257 HYPERVISOR: exec_cmd: vm set_nvram Datacenter_N1 256 
+Jan 16 16:59:25.257 HYPERVISOR: exec_cmd: vm get_status Datacenter_N1 
+Jan 16 16:59:25.257 HYPERVISOR: exec_cmd: vm slot_add_binding Datacenter_N1 1 0 NM-1FE-TX 
+Jan 16 16:59:32.252 HYPERVISOR: exec_cmd: nio create_udp udp-d840a566-9907-4fe4-9499-f970be0677e5 10102 127.0.0.1 10103 
+Jan 16 16:59:32.468 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter_N1 0 0 udp-d840a566-9907-4fe4-9499-f970be0677e5 
+Jan 16 16:59:32.469 HYPERVISOR: exec_cmd: vm get_status Datacenter_N1 
+Jan 16 17:02:20.489 HYPERVISOR: exec_cmd: vm get_status Datacenter_N1 
+Jan 16 17:02:20.490 HYPERVISOR: exec_cmd: vm extract_config Datacenter_N1 
+Jan 16 17:02:27.042 HYPERVISOR: exec_cmd: vm get_status Datacenter_N1 
+Jan 16 17:02:27.042 HYPERVISOR: exec_cmd: vm extract_config Datacenter_N1 
+Jan 16 17:02:27.043 HYPERVISOR: exec_cmd: vm delete Datacenter_N1 
+Jan 16 17:02:27.043 VM: VM Datacenter_N1 destroyed.
+Jan 16 17:02:27.043 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 16 17:02:27.441 HYPERVISOR: Stopped.
+Jan 16 17:02:27.441 GENERAL: reset done.

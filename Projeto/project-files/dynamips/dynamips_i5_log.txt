@@ -1,0 +1,47 @@
+Jan 16 16:59:24.813 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 16 16:59:24.813 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42315.
+Jan 16 16:59:24.823 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 16 16:59:24.823 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips 
+Jan 16 16:59:24.823 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips
+Jan 16 16:59:24.824 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/c1191fd9-737b-42cb-8607-62f8ef8d43ab 
+Jan 16 16:59:24.824 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/c1191fd9-737b-42cb-8607-62f8ef8d43ab
+Jan 16 16:59:24.824 HYPERVISOR: exec_cmd: vm create CoreA 5 c7200 
+Jan 16 16:59:24.824 VM: VM CoreA created.
+Jan 16 16:59:24.824 HYPERVISOR: exec_cmd: vm set_con_tcp_port CoreA 5004 
+Jan 16 16:59:24.824 HYPERVISOR: exec_cmd: c7200 get_mac_addr CoreA 
+Jan 16 16:59:24.825 HYPERVISOR: exec_cmd: vm get_status CoreA 
+Jan 16 16:59:24.825 HYPERVISOR: exec_cmd: vm slot_add_binding CoreA 0 0 C7200-IO-FE 
+Jan 16 16:59:24.825 HYPERVISOR: exec_cmd: vm set_disk0 CoreA 0 
+Jan 16 16:59:24.825 HYPERVISOR: exec_cmd: vm get_status CoreA 
+Jan 16 16:59:24.826 HYPERVISOR: exec_cmd: vm set_idle_pc CoreA 0x62cbf334 
+Jan 16 16:59:24.826 HYPERVISOR: exec_cmd: vm set_ios CoreA /home/samuel/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 16 16:59:24.826 HYPERVISOR: exec_cmd: c7200 set_mac_addr CoreA ca05.1b71.0000 
+Jan 16 16:59:24.827 HYPERVISOR: exec_cmd: vm set_nvram CoreA 512 
+Jan 16 16:59:24.827 HYPERVISOR: exec_cmd: vm set_ram CoreA 512 
+Jan 16 16:59:24.827 HYPERVISOR: exec_cmd: vm get_status CoreA 
+Jan 16 16:59:24.828 HYPERVISOR: exec_cmd: vm slot_remove_binding CoreA 0 0 
+Jan 16 16:59:24.828 HYPERVISOR: exec_cmd: vm get_status CoreA 
+Jan 16 16:59:24.828 HYPERVISOR: exec_cmd: vm slot_add_binding CoreA 0 0 C7200-IO-2FE 
+Jan 16 16:59:24.828 HYPERVISOR: exec_cmd: vm get_status CoreA 
+Jan 16 16:59:24.828 HYPERVISOR: exec_cmd: vm slot_add_binding CoreA 1 0 PA-2FE-TX 
+Jan 16 16:59:27.484 HYPERVISOR: exec_cmd: nio create_udp udp-33cd5f8c-b72a-4375-b0ee-6764a8faad55 10010 127.0.0.1 10011 
+Jan 16 16:59:27.698 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CoreA 0 0 udp-33cd5f8c-b72a-4375-b0ee-6764a8faad55 
+Jan 16 16:59:27.700 HYPERVISOR: exec_cmd: vm get_status CoreA 
+Jan 16 16:59:28.032 HYPERVISOR: exec_cmd: nio create_udp udp-db62ae9f-117b-4956-962e-fd5403e78e7f 10016 127.0.0.1 10017 
+Jan 16 16:59:28.035 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CoreA 0 1 udp-db62ae9f-117b-4956-962e-fd5403e78e7f 
+Jan 16 16:59:28.035 HYPERVISOR: exec_cmd: vm get_status CoreA 
+Jan 16 16:59:29.021 HYPERVISOR: exec_cmd: nio create_udp udp-76b30043-e653-4c50-aadc-bd1e7bd5bbd8 10034 127.0.0.1 10035 
+Jan 16 16:59:29.024 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CoreA 1 0 udp-76b30043-e653-4c50-aadc-bd1e7bd5bbd8 
+Jan 16 16:59:29.025 HYPERVISOR: exec_cmd: vm get_status CoreA 
+Jan 16 16:59:29.118 HYPERVISOR: exec_cmd: nio create_udp udp-36c6e684-f256-4844-88e1-6841a74d51c0 10038 127.0.0.1 10039 
+Jan 16 16:59:29.119 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CoreA 1 1 udp-36c6e684-f256-4844-88e1-6841a74d51c0 
+Jan 16 16:59:29.119 HYPERVISOR: exec_cmd: vm get_status CoreA 
+Jan 16 17:02:20.442 HYPERVISOR: exec_cmd: vm get_status CoreA 
+Jan 16 17:02:20.443 HYPERVISOR: exec_cmd: vm extract_config CoreA 
+Jan 16 17:02:27.283 HYPERVISOR: exec_cmd: vm get_status CoreA 
+Jan 16 17:02:27.284 HYPERVISOR: exec_cmd: vm extract_config CoreA 
+Jan 16 17:02:27.284 HYPERVISOR: exec_cmd: vm delete CoreA 
+Jan 16 17:02:27.284 VM: VM CoreA destroyed.
+Jan 16 17:02:27.284 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 16 17:02:27.513 HYPERVISOR: Stopped.
+Jan 16 17:02:27.513 GENERAL: reset done.

@@ -1,0 +1,41 @@
+Jan 16 16:59:24.916 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 16 16:59:24.916 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57227.
+Jan 16 16:59:24.926 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 16 16:59:24.926 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips 
+Jan 16 16:59:24.926 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips
+Jan 16 16:59:24.926 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/afaa8be7-3239-4e48-8988-1d2c0707ecf0 
+Jan 16 16:59:24.926 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/afaa8be7-3239-4e48-8988-1d2c0707ecf0
+Jan 16 16:59:24.927 HYPERVISOR: exec_cmd: vm create A_South 8 c7200 
+Jan 16 16:59:24.927 VM: VM A_South created.
+Jan 16 16:59:24.927 HYPERVISOR: exec_cmd: vm set_con_tcp_port A_South 5007 
+Jan 16 16:59:24.927 HYPERVISOR: exec_cmd: c7200 get_mac_addr A_South 
+Jan 16 16:59:24.927 HYPERVISOR: exec_cmd: vm get_status A_South 
+Jan 16 16:59:24.927 HYPERVISOR: exec_cmd: vm slot_add_binding A_South 0 0 C7200-IO-FE 
+Jan 16 16:59:24.928 HYPERVISOR: exec_cmd: vm set_disk0 A_South 0 
+Jan 16 16:59:24.928 HYPERVISOR: exec_cmd: vm get_status A_South 
+Jan 16 16:59:24.928 HYPERVISOR: exec_cmd: vm set_idle_pc A_South 0x62cbf334 
+Jan 16 16:59:24.929 HYPERVISOR: exec_cmd: vm set_ios A_South /home/samuel/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 16 16:59:24.929 HYPERVISOR: exec_cmd: c7200 set_mac_addr A_South ca08.1bc3.0000 
+Jan 16 16:59:24.929 HYPERVISOR: exec_cmd: vm set_nvram A_South 512 
+Jan 16 16:59:24.930 HYPERVISOR: exec_cmd: vm set_ram A_South 512 
+Jan 16 16:59:24.930 HYPERVISOR: exec_cmd: vm get_status A_South 
+Jan 16 16:59:24.930 HYPERVISOR: exec_cmd: vm slot_remove_binding A_South 0 0 
+Jan 16 16:59:24.930 HYPERVISOR: exec_cmd: vm get_status A_South 
+Jan 16 16:59:24.930 HYPERVISOR: exec_cmd: vm slot_add_binding A_South 0 0 C7200-IO-2FE 
+Jan 16 16:59:24.931 HYPERVISOR: exec_cmd: vm get_status A_South 
+Jan 16 16:59:24.931 HYPERVISOR: exec_cmd: vm slot_add_binding A_South 1 0 PA-2FE-TX 
+Jan 16 16:59:29.127 HYPERVISOR: exec_cmd: nio create_udp udp-2fe5739b-cc1e-42b9-a98e-ccd41084a013 10040 127.0.0.1 10041 
+Jan 16 16:59:29.342 HYPERVISOR: exec_cmd: vm slot_add_nio_binding A_South 0 0 udp-2fe5739b-cc1e-42b9-a98e-ccd41084a013 
+Jan 16 16:59:29.343 HYPERVISOR: exec_cmd: vm get_status A_South 
+Jan 16 16:59:29.760 HYPERVISOR: exec_cmd: nio create_udp udp-edd8e139-6256-4bb4-9270-9b2aa2445015 10050 127.0.0.1 10051 
+Jan 16 16:59:29.761 HYPERVISOR: exec_cmd: vm slot_add_nio_binding A_South 0 1 udp-edd8e139-6256-4bb4-9270-9b2aa2445015 
+Jan 16 16:59:29.762 HYPERVISOR: exec_cmd: vm get_status A_South 
+Jan 16 17:02:20.450 HYPERVISOR: exec_cmd: vm get_status A_South 
+Jan 16 17:02:20.451 HYPERVISOR: exec_cmd: vm extract_config A_South 
+Jan 16 17:02:26.925 HYPERVISOR: exec_cmd: vm get_status A_South 
+Jan 16 17:02:26.926 HYPERVISOR: exec_cmd: vm extract_config A_South 
+Jan 16 17:02:26.927 HYPERVISOR: exec_cmd: vm delete A_South 
+Jan 16 17:02:26.927 VM: VM A_South destroyed.
+Jan 16 17:02:26.928 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 16 17:02:27.107 HYPERVISOR: Stopped.
+Jan 16 17:02:27.107 GENERAL: reset done.

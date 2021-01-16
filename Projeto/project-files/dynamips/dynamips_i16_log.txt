@@ -1,0 +1,41 @@
+Jan 16 16:59:25.204 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 16 16:59:25.204 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47391.
+Jan 16 16:59:25.214 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 16 16:59:25.215 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips 
+Jan 16 16:59:25.215 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips
+Jan 16 16:59:25.215 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/eb0a15e6-07bb-48fd-bed8-a2168bee68b3 
+Jan 16 16:59:25.215 GENERAL: working_dir=/home/samuel/Universidade/ARA_Proj/Projeto/project-files/dynamips/eb0a15e6-07bb-48fd-bed8-a2168bee68b3
+Jan 16 16:59:25.215 HYPERVISOR: exec_cmd: vm create B_Media_Net 17 c7200 
+Jan 16 16:59:25.215 VM: VM B_Media_Net created.
+Jan 16 16:59:25.215 HYPERVISOR: exec_cmd: vm set_con_tcp_port B_Media_Net 5030 
+Jan 16 16:59:25.216 HYPERVISOR: exec_cmd: c7200 get_mac_addr B_Media_Net 
+Jan 16 16:59:25.216 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 16 16:59:25.216 HYPERVISOR: exec_cmd: vm slot_add_binding B_Media_Net 0 0 C7200-IO-FE 
+Jan 16 16:59:25.216 HYPERVISOR: exec_cmd: vm set_disk0 B_Media_Net 0 
+Jan 16 16:59:25.216 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 16 16:59:25.217 HYPERVISOR: exec_cmd: vm set_idle_pc B_Media_Net 0x62cbf334 
+Jan 16 16:59:25.217 HYPERVISOR: exec_cmd: vm set_ios B_Media_Net /home/samuel/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 16 16:59:25.217 HYPERVISOR: exec_cmd: c7200 set_mac_addr B_Media_Net ca11.1d52.0000 
+Jan 16 16:59:25.218 HYPERVISOR: exec_cmd: vm set_nvram B_Media_Net 512 
+Jan 16 16:59:25.218 HYPERVISOR: exec_cmd: vm set_ram B_Media_Net 512 
+Jan 16 16:59:25.218 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 16 16:59:25.218 HYPERVISOR: exec_cmd: vm slot_remove_binding B_Media_Net 0 0 
+Jan 16 16:59:25.219 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 16 16:59:25.219 HYPERVISOR: exec_cmd: vm slot_add_binding B_Media_Net 0 0 C7200-IO-2FE 
+Jan 16 16:59:25.219 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 16 16:59:25.219 HYPERVISOR: exec_cmd: vm slot_add_binding B_Media_Net 1 0 PA-2FE-TX 
+Jan 16 16:59:31.921 HYPERVISOR: exec_cmd: nio create_udp udp-f39597a8-ca14-40ac-9ef6-acbd12d8e46d 10094 127.0.0.1 10095 
+Jan 16 16:59:32.136 HYPERVISOR: exec_cmd: vm slot_add_nio_binding B_Media_Net 0 0 udp-f39597a8-ca14-40ac-9ef6-acbd12d8e46d 
+Jan 16 16:59:32.137 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 16 16:59:37.619 HYPERVISOR: exec_cmd: nio create_udp udp-d8943ddd-852e-4b2c-8b9c-3635b9bf094c 10138 127.0.0.1 10139 
+Jan 16 16:59:37.620 HYPERVISOR: exec_cmd: vm slot_add_nio_binding B_Media_Net 0 1 udp-d8943ddd-852e-4b2c-8b9c-3635b9bf094c 
+Jan 16 16:59:37.620 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 16 17:02:20.478 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 16 17:02:20.479 HYPERVISOR: exec_cmd: vm extract_config B_Media_Net 
+Jan 16 17:02:27.214 HYPERVISOR: exec_cmd: vm get_status B_Media_Net 
+Jan 16 17:02:27.214 HYPERVISOR: exec_cmd: vm extract_config B_Media_Net 
+Jan 16 17:02:27.214 HYPERVISOR: exec_cmd: vm delete B_Media_Net 
+Jan 16 17:02:27.214 VM: VM B_Media_Net destroyed.
+Jan 16 17:02:27.215 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 16 17:02:27.395 HYPERVISOR: Stopped.
+Jan 16 17:02:27.395 GENERAL: reset done.
